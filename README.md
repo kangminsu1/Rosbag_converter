@@ -43,27 +43,25 @@ $> export LIBGL_ALWAYS_INDIRECT=0
 ---
 ---
 ### 실행 방법
-1. 아무데나 ros package 설치할 폴더를 생성
-```bash
-$> mkdir -p catkin_ws/src #catkin_ws 폴더명은 아무렇게나 생성가능. 하지만 src명은 그대로
-```
 
-2. git에서 이 코드 다운받은 후 전체 파일 및 폴더를 src안에 이동
+1. git에서 이 코드 다운받은 후 package를 build
 ```bash
-$> git clone [주소]
-$> cd catkin_ws
-$> mv ../src 
-```
-
-3. 다음으로 package build 후 package를 build
-```bash
-$> cd ..
+$> git clone https://github.com/kangminsu1/Rosbag_converter.git
+$> cd Rosbag_converter
 $> catkin_make
-$> source devel/setup.bash
 ```
 
-4. bag player 실행
+2. bag player 실행
 ```bash
+$> source devel/setup.bash
+$> roslaunch player player.launch
+```
+
+3. 만약 ERROR: cannot launch node of type [player/converter_gui.py]...(chmod +x) 이 뜬다면
+```bash
+$> chmod +x src/player/scripts/*.py
+$> chmod +x src/player/src/*.py
+이후
 $> roslaunch player player.launch
 ```
 
@@ -77,7 +75,7 @@ $> roslaunch player player.launch
 3. Setting Topic and Play Buttun -> Bag 파일 내에 저장된 Topic을 읽어와서 설정해야 함 (default: Sample.bag 파일 Topic)
 - bag 파일 Topic 불러오는 방법
 ```bash
-$> rosbag info 파일명.bag
+$> rosbag info 파일명.bag # Rosbag_converter/src/player/data 폴더에 sample.bag 파일 있음
 ```
 - 이렇게하면 bag의 상세 내용이 나오는데 맨 아래 Topic의 첫번째 내용을 복사에서 Setting Topic에 기입하면 됨
 4. Rviz -> Sample.bag 파일 말고 다른 파일이면 Start 버튼 실행 후 나오는 RViz 수동으로 설정하여야 함 (bag 정보 입력. bag 정보는 위 3번 참조)
