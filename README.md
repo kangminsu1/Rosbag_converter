@@ -126,4 +126,4 @@ $> rosbag info 파일명.bag # Rosbag_converter/src/player/data 폴더에 sample
 
 --- 
 ### 문의 사항은
-- E-mail: ziz1945@naver.com or kangminsu243@gmail.com
+- E-mail: ziz1945@naver.com
