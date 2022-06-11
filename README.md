@@ -1,4 +1,4 @@
-## BAG Customizer_1.0v
+## BAG Customizer_1.0
 ---
 자율주행차량이나 MMS 장비 등에 장착되어 있는 각 센서를 사용하는 연구개발자 분들을 위한 GUI Tool입니다.
 
