@@ -1,8 +1,8 @@
 ## BAG Customizer_1.0
 ---
-자율주행차량이나 MMS 장비 등에 장착되어 있는 각 센서를 사용하는 연구개발자 분들을 위한 GUI Tool입니다.
+자율주행차량이나 MMS 장비 등에 장착되어 있는 각 센서를 사용하는 연구개발자를 위한 GUI Tool입니다.
 
-Ubuntu + ROS 환경에서 센서 데이터를 손 쉽게 Read & Write 할 수 있도록 만든 GUI라고 보시면 됩니다.
+Ubuntu + ROS 환경에서 센서 데이터를 손 쉽게 Read & Write 할 수 있도록 만든 GUI입니다.
 
 <p align="center">
     <img src="./imgs/bag_customizer.png" width="400">
